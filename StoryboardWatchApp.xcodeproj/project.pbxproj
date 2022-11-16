@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A3CEBC1128DB3F8200FABB8D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CEBC1028DB3F8200FABB8D /* AppDelegate.swift */; };
+		A3CEBC1328DB3F8200FABB8D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CEBC1228DB3F8200FABB8D /* SceneDelegate.swift */; };
+		A3CEBC1528DB3F8200FABB8D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CEBC1428DB3F8200FABB8D /* ViewController.swift */; };
+		A3CEBC1828DB3F8200FABB8D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3CEBC1628DB3F8200FABB8D /* Main.storyboard */; };
+		A3CEBC1A28DB3F8400FABB8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3CEBC1928DB3F8400FABB8D /* Assets.xcassets */; };
+		A3CEBC1D28DB3F8400FABB8D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3CEBC1B28DB3F8400FABB8D /* LaunchScreen.storyboard */; };
+		A3CEBC2228DB3F8400FABB8D /* StoryboardWatchApp WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A3CEBC2128DB3F8400FABB8D /* StoryboardWatchApp WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A3CEBC2828DB3F8400FABB8D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A3CEBC2628DB3F8400FABB8D /* Interface.storyboard */; };
+		A3CEBC2A28DB3F8500FABB8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3CEBC2928DB3F8500FABB8D /* Assets.xcassets */; };
+		A3CEBC3028DB3F8500FABB8D /* StoryboardWatchApp WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A3CEBC2F28DB3F8500FABB8D /* StoryboardWatchApp WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A3CEBC3528DB3F8500FABB8D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CEBC3428DB3F8500FABB8D /* InterfaceController.swift */; };
+		A3CEBC3728DB3F8500FABB8D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CEBC3628DB3F8500FABB8D /* ExtensionDelegate.swift */; };
+		A3CEBC3928DB3F8500FABB8D /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3CEBC3828DB3F8500FABB8D /* ComplicationController.swift */; };
+		A3CEBC3B28DB3F8700FABB8D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A3CEBC3A28DB3F8700FABB8D /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A3CEBC2328DB3F8400FABB8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3CEBC0528DB3F8100FABB8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3CEBC2028DB3F8400FABB8D;
+			remoteInfo = "StoryboardWatchApp WatchKit App";
+		};
+		A3CEBC3128DB3F8500FABB8D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A3CEBC0528DB3F8100FABB8D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A3CEBC2E28DB3F8500FABB8D;
+			remoteInfo = "StoryboardWatchApp WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A3CEBC4228DB3F8700FABB8D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A3CEBC3028DB3F8500FABB8D /* StoryboardWatchApp WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3CEBC4628DB3F8700FABB8D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A3CEBC2228DB3F8400FABB8D /* StoryboardWatchApp WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A3CEBC0D28DB3F8200FABB8D /* StoryboardWatchApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryboardWatchApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3CEBC1028DB3F8200FABB8D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A3CEBC1228DB3F8200FABB8D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A3CEBC1428DB3F8200FABB8D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A3CEBC1728DB3F8200FABB8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A3CEBC1928DB3F8400FABB8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3CEBC1C28DB3F8400FABB8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A3CEBC1E28DB3F8400FABB8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A3CEBC2128DB3F8400FABB8D /* StoryboardWatchApp WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "StoryboardWatchApp WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3CEBC2728DB3F8400FABB8D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A3CEBC2928DB3F8500FABB8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3CEBC2F28DB3F8500FABB8D /* StoryboardWatchApp WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "StoryboardWatchApp WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3CEBC3428DB3F8500FABB8D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A3CEBC3628DB3F8500FABB8D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A3CEBC3828DB3F8500FABB8D /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		A3CEBC3A28DB3F8700FABB8D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A3CEBC3C28DB3F8700FABB8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A3CEBC0A28DB3F8200FABB8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3CEBC2C28DB3F8500FABB8D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A3CEBC0428DB3F8100FABB8D = {
+			isa = PBXGroup;
+			children = (
+				A3CEBC0F28DB3F8200FABB8D /* StoryboardWatchApp */,
+				A3CEBC2528DB3F8400FABB8D /* StoryboardWatchApp WatchKit App */,
+				A3CEBC3328DB3F8500FABB8D /* StoryboardWatchApp WatchKit Extension */,
+				A3CEBC0E28DB3F8200FABB8D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A3CEBC0E28DB3F8200FABB8D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A3CEBC0D28DB3F8200FABB8D /* StoryboardWatchApp.app */,
+				A3CEBC2128DB3F8400FABB8D /* StoryboardWatchApp WatchKit App.app */,
+				A3CEBC2F28DB3F8500FABB8D /* StoryboardWatchApp WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3CEBC0F28DB3F8200FABB8D /* StoryboardWatchApp */ = {
+			isa = PBXGroup;
+			children = (
+				A3CEBC1028DB3F8200FABB8D /* AppDelegate.swift */,
+				A3CEBC1228DB3F8200FABB8D /* SceneDelegate.swift */,
+				A3CEBC1428DB3F8200FABB8D /* ViewController.swift */,
+				A3CEBC1628DB3F8200FABB8D /* Main.storyboard */,
+				A3CEBC1928DB3F8400FABB8D /* Assets.xcassets */,
+				A3CEBC1B28DB3F8400FABB8D /* LaunchScreen.storyboard */,
+				A3CEBC1E28DB3F8400FABB8D /* Info.plist */,
+			);
+			path = StoryboardWatchApp;
+			sourceTree = "<group>";
+		};
+		A3CEBC2528DB3F8400FABB8D /* StoryboardWatchApp WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A3CEBC2628DB3F8400FABB8D /* Interface.storyboard */,
+				A3CEBC2928DB3F8500FABB8D /* Assets.xcassets */,
+			);
+			path = "StoryboardWatchApp WatchKit App";
+			sourceTree = "<group>";
+		};
+		A3CEBC3328DB3F8500FABB8D /* StoryboardWatchApp WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A3CEBC3428DB3F8500FABB8D /* InterfaceController.swift */,
+				A3CEBC3628DB3F8500FABB8D /* ExtensionDelegate.swift */,
+				A3CEBC3828DB3F8500FABB8D /* ComplicationController.swift */,
+				A3CEBC3A28DB3F8700FABB8D /* Assets.xcassets */,
+				A3CEBC3C28DB3F8700FABB8D /* Info.plist */,
+			);
+			path = "StoryboardWatchApp WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A3CEBC0C28DB3F8200FABB8D /* StoryboardWatchApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3CEBC4728DB3F8700FABB8D /* Build configuration list for PBXNativeTarget "StoryboardWatchApp" */;
+			buildPhases = (
+				A3CEBC0928DB3F8200FABB8D /* Sources */,
+				A3CEBC0A28DB3F8200FABB8D /* Frameworks */,
+				A3CEBC0B28DB3F8200FABB8D /* Resources */,
+				A3CEBC4628DB3F8700FABB8D /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3CEBC2428DB3F8400FABB8D /* PBXTargetDependency */,
+			);
+			name = StoryboardWatchApp;
+			productName = StoryboardWatchApp;
+			productReference = A3CEBC0D28DB3F8200FABB8D /* StoryboardWatchApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A3CEBC2028DB3F8400FABB8D /* StoryboardWatchApp WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3CEBC4328DB3F8700FABB8D /* Build configuration list for PBXNativeTarget "StoryboardWatchApp WatchKit App" */;
+			buildPhases = (
+				A3CEBC1F28DB3F8400FABB8D /* Resources */,
+				A3CEBC4228DB3F8700FABB8D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A3CEBC3228DB3F8500FABB8D /* PBXTargetDependency */,
+			);
+			name = "StoryboardWatchApp WatchKit App";
+			productName = "StoryboardWatchApp WatchKit App";
+			productReference = A3CEBC2128DB3F8400FABB8D /* StoryboardWatchApp WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A3CEBC2E28DB3F8500FABB8D /* StoryboardWatchApp WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3CEBC3F28DB3F8700FABB8D /* Build configuration list for PBXNativeTarget "StoryboardWatchApp WatchKit Extension" */;
+			buildPhases = (
+				A3CEBC2B28DB3F8500FABB8D /* Sources */,
+				A3CEBC2C28DB3F8500FABB8D /* Frameworks */,
+				A3CEBC2D28DB3F8500FABB8D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "StoryboardWatchApp WatchKit Extension";
+			productName = "StoryboardWatchApp WatchKit Extension";
+			productReference = A3CEBC2F28DB3F8500FABB8D /* StoryboardWatchApp WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A3CEBC0528DB3F8100FABB8D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					A3CEBC0C28DB3F8200FABB8D = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					A3CEBC2028DB3F8400FABB8D = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					A3CEBC2E28DB3F8500FABB8D = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = A3CEBC0828DB3F8100FABB8D /* Build configuration list for PBXProject "StoryboardWatchApp" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A3CEBC0428DB3F8100FABB8D;
+			productRefGroup = A3CEBC0E28DB3F8200FABB8D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A3CEBC0C28DB3F8200FABB8D /* StoryboardWatchApp */,
+				A3CEBC2028DB3F8400FABB8D /* StoryboardWatchApp WatchKit App */,
+				A3CEBC2E28DB3F8500FABB8D /* StoryboardWatchApp WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A3CEBC0B28DB3F8200FABB8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3CEBC1D28DB3F8400FABB8D /* LaunchScreen.storyboard in Resources */,
+				A3CEBC1A28DB3F8400FABB8D /* Assets.xcassets in Resources */,
+				A3CEBC1828DB3F8200FABB8D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3CEBC1F28DB3F8400FABB8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3CEBC2A28DB3F8500FABB8D /* Assets.xcassets in Resources */,
+				A3CEBC2828DB3F8400FABB8D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3CEBC2D28DB3F8500FABB8D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3CEBC3B28DB3F8700FABB8D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A3CEBC0928DB3F8200FABB8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3CEBC1528DB3F8200FABB8D /* ViewController.swift in Sources */,
+				A3CEBC1128DB3F8200FABB8D /* AppDelegate.swift in Sources */,
+				A3CEBC1328DB3F8200FABB8D /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A3CEBC2B28DB3F8500FABB8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A3CEBC3728DB3F8500FABB8D /* ExtensionDelegate.swift in Sources */,
+				A3CEBC3528DB3F8500FABB8D /* InterfaceController.swift in Sources */,
+				A3CEBC3928DB3F8500FABB8D /* ComplicationController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A3CEBC2428DB3F8400FABB8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3CEBC2028DB3F8400FABB8D /* StoryboardWatchApp WatchKit App */;
+			targetProxy = A3CEBC2328DB3F8400FABB8D /* PBXContainerItemProxy */;
+		};
+		A3CEBC3228DB3F8500FABB8D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A3CEBC2E28DB3F8500FABB8D /* StoryboardWatchApp WatchKit Extension */;
+			targetProxy = A3CEBC3128DB3F8500FABB8D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A3CEBC1628DB3F8200FABB8D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3CEBC1728DB3F8200FABB8D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A3CEBC1B28DB3F8400FABB8D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3CEBC1C28DB3F8400FABB8D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A3CEBC2628DB3F8400FABB8D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A3CEBC2728DB3F8400FABB8D /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A3CEBC3D28DB3F8700FABB8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A3CEBC3E28DB3F8700FABB8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		A3CEBC4028DB3F8700FABB8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "StoryboardWatchApp WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "StoryboardWatchApp WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esgi.StoryboardWatchApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		A3CEBC4128DB3F8700FABB8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "StoryboardWatchApp WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "StoryboardWatchApp WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKRunsIndependentlyOfCompanionApp = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esgi.StoryboardWatchApp.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		A3CEBC4428DB3F8700FABB8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = StoryboardWatchApp_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "StoryboardWatchApp WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.esgi.StoryboardWatchApp;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esgi.StoryboardWatchApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Debug;
+		};
+		A3CEBC4528DB3F8700FABB8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = StoryboardWatchApp_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "StoryboardWatchApp WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKCompanionAppBundleIdentifier = com.esgi.StoryboardWatchApp;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esgi.StoryboardWatchApp.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				VALIDATE_PRODUCT = YES;
+				WATCHOS_DEPLOYMENT_TARGET = 8.3;
+			};
+			name = Release;
+		};
+		A3CEBC4828DB3F8700FABB8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StoryboardWatchApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esgi.StoryboardWatchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A3CEBC4928DB3F8700FABB8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = StoryboardWatchApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.esgi.StoryboardWatchApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A3CEBC0828DB3F8100FABB8D /* Build configuration list for PBXProject "StoryboardWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3CEBC3D28DB3F8700FABB8D /* Debug */,
+				A3CEBC3E28DB3F8700FABB8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3CEBC3F28DB3F8700FABB8D /* Build configuration list for PBXNativeTarget "StoryboardWatchApp WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3CEBC4028DB3F8700FABB8D /* Debug */,
+				A3CEBC4128DB3F8700FABB8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3CEBC4328DB3F8700FABB8D /* Build configuration list for PBXNativeTarget "StoryboardWatchApp WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3CEBC4428DB3F8700FABB8D /* Debug */,
+				A3CEBC4528DB3F8700FABB8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A3CEBC4728DB3F8700FABB8D /* Build configuration list for PBXNativeTarget "StoryboardWatchApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A3CEBC4828DB3F8700FABB8D /* Debug */,
+				A3CEBC4928DB3F8700FABB8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A3CEBC0528DB3F8100FABB8D /* Project object */;
+}

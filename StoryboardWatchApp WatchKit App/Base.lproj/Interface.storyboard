@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="19529" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="19514"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="StoryboardWatchApp_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <button width="1" alignment="left" title="UP" id="VMh-yr-cPH">
+                            <connections>
+                                <action selector="handleUpButton" destination="AgC-eL-Hgc" id="ndk-Hq-9Uc"/>
+                            </connections>
+                        </button>
+                        <group width="1" alignment="left" id="H3B-qp-d96">
+                            <items>
+                                <button width="0.5" alignment="left" title="LEFT" id="SaM-SO-gpq">
+                                    <connections>
+                                        <action selector="handleLeftButton" destination="AgC-eL-Hgc" id="8Et-1M-43g"/>
+                                    </connections>
+                                </button>
+                                <button width="0.5" alignment="left" title="RIGHT" id="Xg9-CF-XXz">
+                                    <connections>
+                                        <action selector="handleRightButton" destination="AgC-eL-Hgc" id="RNK-6D-Tp8"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <button width="1" alignment="left" title="DOWN" id="pfP-bi-SNr">
+                            <connections>
+                                <action selector="handleDownButton" destination="AgC-eL-Hgc" id="pwm-ka-aef"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="BOMB" id="jcB-RO-bLT">
+                            <connections>
+                                <action selector="handleBombButton" destination="AgC-eL-Hgc" id="sqv-fr-xHb"/>
+                            </connections>
+                        </button>
+                    </items>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="-16" y="-6"/>
+        </scene>
+    </scenes>
+</document>
